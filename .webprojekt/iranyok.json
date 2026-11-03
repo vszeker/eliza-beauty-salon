@@ -1,0 +1,104 @@
+{
+  "directions": [
+    {
+      "rationale": "Nyugodt személyes törődés.",
+      "id": 1,
+      "contrast_axes": {
+        "density": "spacious",
+        "hero": "split",
+        "rhythm": "alternating",
+        "proof": "testimonials"
+      },
+      "fonts": {
+        "body": {
+          "fallback": "system-ui, sans-serif",
+          "family": "Jost"
+        },
+        "heading": {
+          "fallback": "Georgia, serif",
+          "family": "Cormorant Garamond"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+      },
+      "palette": {
+        "secondary": "#6E3644",
+        "text": "#2E2626",
+        "bg": "#FAF6F2",
+        "surface": "#F1E6DF",
+        "muted": "#6B5F5C",
+        "primary": "#8E4A5A",
+        "accent": "#C9A27E"
+      },
+      "name": "Csendes énidő",
+      "slug": "csendes-enido",
+      "description": "Tágas osztott nyitás: balra személyes üzenet, jobbra nagy kezelési fotó. Váltakozó képes szakaszok, hangsúlyos vendégvélemények."
+    },
+    {
+      "rationale": "A kezelés élményét teszi átélhetővé.",
+      "id": 2,
+      "contrast_axes": {
+        "density": "very-spacious",
+        "hero": "wide-photo-panel",
+        "rhythm": "asymmetric",
+        "proof": "process"
+      },
+      "fonts": {
+        "body": {
+          "fallback": "system-ui, sans-serif",
+          "family": "Jost"
+        },
+        "heading": {
+          "fallback": "Georgia, serif",
+          "family": "Cormorant Garamond"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+      },
+      "palette": {
+        "secondary": "#6E3644",
+        "text": "#2E2626",
+        "bg": "#FAF6F2",
+        "surface": "#F1E6DF",
+        "muted": "#6B5F5C",
+        "primary": "#8E4A5A",
+        "accent": "#C9A27E"
+      },
+      "name": "A gondoskodás tere",
+      "slug": "a-gondoskodas-tere",
+      "description": "Széles hangulatfotó előtt átlátszatlan krém szövegpanel. Aszimmetrikus képméretek, púderfelületek, korán bemutatott kezelési folyamat."
+    },
+    {
+      "rationale": "Megértést és szakmai bizalmat épít.",
+      "id": 3,
+      "contrast_axes": {
+        "density": "balanced",
+        "hero": "typographic",
+        "rhythm": "structured-rows",
+        "proof": "expertise"
+      },
+      "fonts": {
+        "body": {
+          "fallback": "system-ui, sans-serif",
+          "family": "Jost"
+        },
+        "heading": {
+          "fallback": "Georgia, serif",
+          "family": "Cormorant Garamond"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap"
+      },
+      "palette": {
+        "secondary": "#6E3644",
+        "text": "#2E2626",
+        "bg": "#FAF6F2",
+        "surface": "#F1E6DF",
+        "muted": "#6B5F5C",
+        "primary": "#8E4A5A",
+        "accent": "#C9A27E"
+      },
+      "name": "Személyes bőrterv",
+      "slug": "szemelyes-borterv",
+      "description": "Középre zárt tipografikus nyitás, alacsony széles fotósáv. Korai szakmai bemutatkozás, kezelési sorok, kompaktabb szerkezet."
+    }
+  ],
+  "total": 3
+}
