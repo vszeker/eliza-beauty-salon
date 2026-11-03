@@ -1,0 +1,652 @@
+[
+  {
+    "source": "images/1.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 537840,
+    "variants": [
+      {
+        "file": "images/optimized/1.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 26464
+      },
+      {
+        "file": "images/optimized/1-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 16650
+      },
+      {
+        "file": "images/optimized/1-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 8112
+      }
+    ]
+  },
+  {
+    "source": "images/10.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 635656,
+    "variants": [
+      {
+        "file": "images/optimized/10.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 31932
+      },
+      {
+        "file": "images/optimized/10-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 19562
+      },
+      {
+        "file": "images/optimized/10-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 9198
+      }
+    ]
+  },
+  {
+    "source": "images/11.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 913685,
+    "variants": [
+      {
+        "file": "images/optimized/11.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 34670
+      },
+      {
+        "file": "images/optimized/11-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 21480
+      },
+      {
+        "file": "images/optimized/11-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 11064
+      }
+    ]
+  },
+  {
+    "source": "images/17.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 881327,
+    "variants": [
+      {
+        "file": "images/optimized/17.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 67352
+      },
+      {
+        "file": "images/optimized/17-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 27774
+      },
+      {
+        "file": "images/optimized/17-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 8868
+      }
+    ]
+  },
+  {
+    "source": "images/18.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 1190340,
+    "variants": [
+      {
+        "file": "images/optimized/18.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 51164
+      },
+      {
+        "file": "images/optimized/18-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 29134
+      },
+      {
+        "file": "images/optimized/18-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 12592
+      }
+    ]
+  },
+  {
+    "source": "images/19.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 459077,
+    "variants": [
+      {
+        "file": "images/optimized/19.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 20506
+      },
+      {
+        "file": "images/optimized/19-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 13748
+      },
+      {
+        "file": "images/optimized/19-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 7200
+      }
+    ]
+  },
+  {
+    "source": "images/2 másolata.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 1317883,
+    "variants": [
+      {
+        "file": "images/optimized/2 másolata.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 53992
+      },
+      {
+        "file": "images/optimized/2 másolata-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 23374
+      },
+      {
+        "file": "images/optimized/2 másolata-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 9716
+      }
+    ]
+  },
+  {
+    "source": "images/2.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 419422,
+    "variants": [
+      {
+        "file": "images/optimized/2.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 24944
+      },
+      {
+        "file": "images/optimized/2-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 15738
+      },
+      {
+        "file": "images/optimized/2-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 7444
+      }
+    ]
+  },
+  {
+    "source": "images/20.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 402080,
+    "variants": [
+      {
+        "file": "images/optimized/20.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 20632
+      },
+      {
+        "file": "images/optimized/20-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 13008
+      },
+      {
+        "file": "images/optimized/20-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 6498
+      }
+    ]
+  },
+  {
+    "source": "images/3 másolata.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 752906,
+    "variants": [
+      {
+        "file": "images/optimized/3 másolata.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 33270
+      },
+      {
+        "file": "images/optimized/3 másolata-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 16716
+      },
+      {
+        "file": "images/optimized/3 másolata-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 7354
+      }
+    ]
+  },
+  {
+    "source": "images/3.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 563891,
+    "variants": [
+      {
+        "file": "images/optimized/3.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 30368
+      },
+      {
+        "file": "images/optimized/3-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 20486
+      },
+      {
+        "file": "images/optimized/3-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 9476
+      }
+    ]
+  },
+  {
+    "source": "images/4 másolata.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 509146,
+    "variants": [
+      {
+        "file": "images/optimized/4 másolata.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 28626
+      },
+      {
+        "file": "images/optimized/4 másolata-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 17610
+      },
+      {
+        "file": "images/optimized/4 másolata-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 8994
+      }
+    ]
+  },
+  {
+    "source": "images/4.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 482381,
+    "variants": [
+      {
+        "file": "images/optimized/4.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 21560
+      },
+      {
+        "file": "images/optimized/4-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 14088
+      },
+      {
+        "file": "images/optimized/4-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 7076
+      }
+    ]
+  },
+  {
+    "source": "images/5 másolata.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 941003,
+    "variants": [
+      {
+        "file": "images/optimized/5 másolata.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 96606
+      },
+      {
+        "file": "images/optimized/5 másolata-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 52338
+      },
+      {
+        "file": "images/optimized/5 másolata-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 20118
+      }
+    ]
+  },
+  {
+    "source": "images/6 másolata.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 746511,
+    "variants": [
+      {
+        "file": "images/optimized/6 másolata.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 39262
+      },
+      {
+        "file": "images/optimized/6 másolata-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 26036
+      },
+      {
+        "file": "images/optimized/6 másolata-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 12716
+      }
+    ]
+  },
+  {
+    "source": "images/6.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 1180899,
+    "variants": [
+      {
+        "file": "images/optimized/6.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 75200
+      },
+      {
+        "file": "images/optimized/6-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 43980
+      },
+      {
+        "file": "images/optimized/6-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 15006
+      }
+    ]
+  },
+  {
+    "source": "images/7.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 539540,
+    "variants": [
+      {
+        "file": "images/optimized/7.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 18826
+      },
+      {
+        "file": "images/optimized/7-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 12128
+      },
+      {
+        "file": "images/optimized/7-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 6038
+      }
+    ]
+  },
+  {
+    "source": "images/8.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 666369,
+    "variants": [
+      {
+        "file": "images/optimized/8.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 35500
+      },
+      {
+        "file": "images/optimized/8-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 20082
+      },
+      {
+        "file": "images/optimized/8-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 8516
+      }
+    ]
+  },
+  {
+    "source": "images/9.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 334356,
+    "variants": [
+      {
+        "file": "images/optimized/9.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 18538
+      },
+      {
+        "file": "images/optimized/9-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 12742
+      },
+      {
+        "file": "images/optimized/9-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 6882
+      }
+    ]
+  },
+  {
+    "source": "images/facial-care.jpg",
+    "original_width": 1400,
+    "original_height": 933,
+    "original_bytes": 150104,
+    "variants": [
+      {
+        "file": "images/optimized/facial-care.webp",
+        "width": 1400,
+        "height": 933,
+        "bytes": 73268
+      },
+      {
+        "file": "images/optimized/facial-care-800w.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 32436
+      },
+      {
+        "file": "images/optimized/facial-care-480w.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 15298
+      }
+    ]
+  },
+  {
+    "source": "images/skincare.jpg",
+    "original_width": 1200,
+    "original_height": 1800,
+    "original_bytes": 144219,
+    "variants": [
+      {
+        "file": "images/optimized/skincare.webp",
+        "width": 1067,
+        "height": 1600,
+        "bytes": 38152
+      },
+      {
+        "file": "images/optimized/skincare-800w.webp",
+        "width": 800,
+        "height": 1200,
+        "bytes": 25728
+      },
+      {
+        "file": "images/optimized/skincare-480w.webp",
+        "width": 480,
+        "height": 720,
+        "bytes": 12248
+      }
+    ]
+  },
+  {
+    "source": "images/spa-interior.jpg",
+    "original_width": 1400,
+    "original_height": 933,
+    "original_bytes": 172384,
+    "variants": [
+      {
+        "file": "images/optimized/spa-interior.webp",
+        "width": 1400,
+        "height": 933,
+        "bytes": 87880
+      },
+      {
+        "file": "images/optimized/spa-interior-800w.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 32526
+      },
+      {
+        "file": "images/optimized/spa-interior-480w.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 13540
+      }
+    ]
+  },
+  {
+    "source": "images/treatment.jpg",
+    "original_width": 1800,
+    "original_height": 1200,
+    "original_bytes": 388932,
+    "variants": [
+      {
+        "file": "images/optimized/treatment.webp",
+        "width": 1600,
+        "height": 1067,
+        "bytes": 127944
+      },
+      {
+        "file": "images/optimized/treatment-800w.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 27244
+      },
+      {
+        "file": "images/optimized/treatment-480w.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 13016
+      }
+    ]
+  },
+  {
+    "source": "images/21.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 587583,
+    "variants": [
+      {
+        "file": "images/optimized/21.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 35128
+      },
+      {
+        "file": "images/optimized/21-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 20548
+      },
+      {
+        "file": "images/optimized/21-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 9068
+      }
+    ]
+  },
+  {
+    "source": "images/22.png",
+    "original_width": 1080,
+    "original_height": 1350,
+    "original_bytes": 543186,
+    "variants": [
+      {
+        "file": "images/optimized/22.webp",
+        "width": 1080,
+        "height": 1350,
+        "bytes": 24774
+      },
+      {
+        "file": "images/optimized/22-800w.webp",
+        "width": 800,
+        "height": 1000,
+        "bytes": 16664
+      },
+      {
+        "file": "images/optimized/22-480w.webp",
+        "width": 480,
+        "height": 600,
+        "bytes": 8350
+      }
+    ]
+  }
+]

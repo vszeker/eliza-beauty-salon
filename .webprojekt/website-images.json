@@ -1,0 +1,333 @@
+{
+  "relaxing-facial": {
+    "source": "4.png",
+    "crop": [
+      108,
+      388,
+      972,
+      963
+    ],
+    "alt": "Relaxáló arckezelés puha törölközőkkel",
+    "variants": [
+      {
+        "path": "images/website/relaxing-facial.webp",
+        "width": 864,
+        "height": 575
+      },
+      {
+        "path": "images/website/relaxing-facial-800w.webp",
+        "width": 800,
+        "height": 532
+      },
+      {
+        "path": "images/website/relaxing-facial-480w.webp",
+        "width": 480,
+        "height": 319
+      }
+    ]
+  },
+  "facial-device": {
+    "source": "10.png",
+    "crop": [
+      108,
+      388,
+      972,
+      963
+    ],
+    "alt": "Gépi arckezelés a bőr ápolásához",
+    "variants": [
+      {
+        "path": "images/website/facial-device.webp",
+        "width": 864,
+        "height": 575
+      },
+      {
+        "path": "images/website/facial-device-800w.webp",
+        "width": 800,
+        "height": 532
+      },
+      {
+        "path": "images/website/facial-device-480w.webp",
+        "width": 480,
+        "height": 319
+      }
+    ]
+  },
+  "serum": {
+    "source": "2 másolata.png",
+    "crop": [
+      179,
+      124,
+      933,
+      1258
+    ],
+    "alt": "Aranyszínű szérum cseppentős üvegben",
+    "variants": [
+      {
+        "path": "images/website/serum.webp",
+        "width": 754,
+        "height": 1134
+      },
+      {
+        "path": "images/website/serum-480w.webp",
+        "width": 480,
+        "height": 722
+      }
+    ]
+  },
+  "care-collection": {
+    "source": "3 másolata.png",
+    "crop": [
+      108,
+      222,
+      972,
+      1086
+    ],
+    "alt": "Bőrápolási készítmények meleg bézs környezetben",
+    "variants": [
+      {
+        "path": "images/website/care-collection.webp",
+        "width": 864,
+        "height": 864
+      },
+      {
+        "path": "images/website/care-collection-800w.webp",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "path": "images/website/care-collection-480w.webp",
+        "width": 480,
+        "height": 480
+      }
+    ]
+  },
+  "mask-treatment": {
+    "source": "3.png",
+    "crop": [
+      108,
+      388,
+      972,
+      963
+    ],
+    "alt": "Arcpakolás felvitele ecsettel",
+    "variants": [
+      {
+        "path": "images/website/mask-treatment.webp",
+        "width": 864,
+        "height": 575
+      },
+      {
+        "path": "images/website/mask-treatment-800w.webp",
+        "width": 800,
+        "height": 532
+      },
+      {
+        "path": "images/website/mask-treatment-480w.webp",
+        "width": 480,
+        "height": 319
+      }
+    ]
+  },
+  "skin-detail": {
+    "source": "18.png",
+    "crop": [
+      163,
+      108,
+      917,
+      1242
+    ],
+    "alt": "Arcbőr és krém közeli részlete",
+    "variants": [
+      {
+        "path": "images/website/skin-detail.webp",
+        "width": 754,
+        "height": 1134
+      },
+      {
+        "path": "images/website/skin-detail-480w.webp",
+        "width": 480,
+        "height": 722
+      }
+    ]
+  },
+  "care-guide": {
+    "source": "5 másolata.png",
+    "crop": [
+      108,
+      387,
+      972,
+      963
+    ],
+    "alt": "Nyitott jegyzetfüzet szárított virágok mellett",
+    "variants": [
+      {
+        "path": "images/website/care-guide.webp",
+        "width": 864,
+        "height": 576
+      },
+      {
+        "path": "images/website/care-guide-800w.webp",
+        "width": 800,
+        "height": 533
+      },
+      {
+        "path": "images/website/care-guide-480w.webp",
+        "width": 480,
+        "height": 320
+      }
+    ]
+  },
+  "facial-massage": {
+    "source": "2.png",
+    "crop": [
+      108,
+      433,
+      972,
+      917
+    ],
+    "alt": "Nyugodt arcmasszázs meleg fényben",
+    "variants": [
+      {
+        "path": "images/website/facial-massage.webp",
+        "width": 864,
+        "height": 484
+      },
+      {
+        "path": "images/website/facial-massage-800w.webp",
+        "width": 800,
+        "height": 448
+      },
+      {
+        "path": "images/website/facial-massage-480w.webp",
+        "width": 480,
+        "height": 269
+      }
+    ]
+  },
+  "facial-care": {
+    "source": "19.png",
+    "crop": [
+      124,
+      447,
+      988,
+      1022
+    ],
+    "alt": "Kozmetikai arckezelés, gondoskodó érintés",
+    "variants": [
+      {
+        "path": "images/website/facial-care.webp",
+        "width": 864,
+        "height": 575
+      },
+      {
+        "path": "images/website/facial-care-800w.webp",
+        "width": 800,
+        "height": 532
+      },
+      {
+        "path": "images/website/facial-care-480w.webp",
+        "width": 480,
+        "height": 319
+      }
+    ]
+  },
+  "care-products": {
+    "source": "4 másolata.png",
+    "crop": [
+      163,
+      108,
+      917,
+      1242
+    ],
+    "alt": "Bőrápolási termékek természetes bézs tónusokkal",
+    "variants": [
+      {
+        "path": "images/website/care-products.webp",
+        "width": 754,
+        "height": 1134
+      },
+      {
+        "path": "images/website/care-products-480w.webp",
+        "width": 480,
+        "height": 722
+      }
+    ]
+  },
+  "mask-care": {
+    "source": "1.png",
+    "crop": [
+      108,
+      388,
+      972,
+      963
+    ],
+    "alt": "Arcpakolás felvitele egy kozmetikai kezelés során",
+    "variants": [
+      {
+        "path": "images/website/mask-care.webp",
+        "width": 864,
+        "height": 575
+      },
+      {
+        "path": "images/website/mask-care-800w.webp",
+        "width": 800,
+        "height": 532
+      },
+      {
+        "path": "images/website/mask-care-480w.webp",
+        "width": 480,
+        "height": 319
+      }
+    ]
+  },
+  "cream-texture": {
+    "source": "6.png",
+    "crop": [
+      114,
+      108,
+      966,
+      1242
+    ],
+    "alt": "Krém a kézfejen, közeli részlet",
+    "variants": [
+      {
+        "path": "images/website/cream-texture.webp",
+        "width": 852,
+        "height": 1134
+      },
+      {
+        "path": "images/website/cream-texture-800w.webp",
+        "width": 800,
+        "height": 1065
+      },
+      {
+        "path": "images/website/cream-texture-480w.webp",
+        "width": 480,
+        "height": 639
+      }
+    ]
+  },
+  "serum-drop": {
+    "source": "6 másolata.png",
+    "crop": [
+      200,
+      108,
+      880,
+      1242
+    ],
+    "alt": "Szérum cseppentése egy üvegbe",
+    "variants": [
+      {
+        "path": "images/website/serum-drop.webp",
+        "width": 680,
+        "height": 1134
+      },
+      {
+        "path": "images/website/serum-drop-480w.webp",
+        "width": 480,
+        "height": 800
+      }
+    ]
+  }
+}

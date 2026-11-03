@@ -25,32 +25,5 @@
     "faqOpens": true,
     "mobileMenuOpens": true,
     "errors": []
-  },
-  {
-    "file": "koncepcio-2-a-gondoskodas-tere.html",
-    "width": 1440,
-    "title": "A gondoskodás tere | Eliza Beauty Salon",
-    "overflow": false,
-    "h1": 1,
-    "brokenImages": [],
-    "badAnchors": [],
-    "forms": 2,
-    "fonts": true,
-    "faqOpens": true,
-    "errors": []
-  },
-  {
-    "file": "koncepcio-2-a-gondoskodas-tere.html",
-    "width": 375,
-    "title": "A gondoskodás tere | Eliza Beauty Salon",
-    "overflow": false,
-    "h1": 1,
-    "brokenImages": [],
-    "badAnchors": [],
-    "forms": 2,
-    "fonts": true,
-    "faqOpens": true,
-    "mobileMenuOpens": true,
-    "errors": []
   }
 ]
