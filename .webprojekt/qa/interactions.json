@@ -1,0 +1,62 @@
+[
+  {
+    "file": "koncepcio-1-csendes-enido.html",
+    "forms": [
+      {
+        "valid": true,
+        "status": "Ez egy bemutató: nem történt feliratkozás. A Kisokos letöltése még nem elérhető.",
+        "hasSubmitHandler": true
+      },
+      {
+        "valid": true,
+        "status": "Ez egy bemutató: az üzeneted nem került elküldésre, időpontkérés nem történt.",
+        "hasSubmitHandler": true
+      }
+    ],
+    "remainsOnPage": true,
+    "typography": {
+      "size": "61.44px",
+      "family": "\"Cormorant Garamond\", Georgia, serif"
+    }
+  },
+  {
+    "file": "koncepcio-2-a-gondoskodas-tere.html",
+    "forms": [
+      {
+        "valid": true,
+        "status": "Ez a feliratkozás bemutatója. Nem történt feliratkozás és nincs letölthető PDF; az adataidat nem küldtük el.",
+        "hasSubmitHandler": true
+      },
+      {
+        "valid": true,
+        "status": "Ez az időpontkérés bemutatója. Nem történt üzenetküldés vagy foglalás; az adataidat nem küldtük el.",
+        "hasSubmitHandler": true
+      }
+    ],
+    "remainsOnPage": true,
+    "typography": {
+      "size": "58.88px",
+      "family": "\"Cormorant Garamond\", Georgia, serif"
+    }
+  },
+  {
+    "file": "koncepcio-3-szemelyes-borterv.html",
+    "forms": [
+      {
+        "valid": true,
+        "status": "Ez bemutató: nem történt feliratkozás, a PDF még nem tölthető le.",
+        "hasSubmitHandler": true
+      },
+      {
+        "valid": true,
+        "status": "Ez bemutató: az időpontkérés nem került elküldésre.",
+        "hasSubmitHandler": true
+      }
+    ],
+    "remainsOnPage": true,
+    "typography": {
+      "size": "64px",
+      "family": "\"Cormorant Garamond\", Georgia, serif"
+    }
+  }
+]

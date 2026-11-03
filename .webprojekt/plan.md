@@ -1,6 +1,6 @@
 # Weboldal-generálási terv
 
-Állapot: koncepciójavaslat, felhasználói jóváhagyásra vár. Három kezdőoldal-prototípus készül majd; a projekt felállítása még nem kezdődött el.
+Állapot: a felhasználó jóváhagyta a három irányt; a három kezdőoldal-prototípus és a választóoldal elkészült.
 
 ## Brand brief összefoglaló
 Az Eliza Beauty Salon személyre szabott kozmetikai kezeléseket kínál Budapesten, elsődlegesen 35 év feletti, bőrfiatalítást kereső nőknek. A megjelenés nyugodt, személyes és bizalmat ébresztő. A fő cselekvés az „Időpontot kérek”, amely az időpontkérő űrlaphoz vezet; az időpontot Eliza egyezteti vissza. A szakmai háttér, az egyéni kezelési terv, a privát környezet és az egyeztetett elégedettségi garancia építi a bizalmat.
