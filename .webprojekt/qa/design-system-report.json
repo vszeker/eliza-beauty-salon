@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "duplicateIds": [],
+      "missingAnchors": [],
+      "h1": 1
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "broken": [],
+      "duplicateIds": [],
+      "missingAnchors": [],
+      "h1": 1
+    },
+    {
+      "faqOpens": true
+    },
+    {
+      "dialogOpens": true
+    }
+  ],
+  "errors": []
+}

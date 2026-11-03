@@ -1,3 +1,4 @@
+raise SystemExit("Archivált generátor: az index.html már az új főoldal; ne készíts új koncepcióválasztót.")
 import json
 from pathlib import Path
 

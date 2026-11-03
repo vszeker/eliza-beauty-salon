@@ -1,0 +1,44 @@
+/* Eliza Beauty Salon 1.0 — a kiválasztott első változat alapján. */
+:root {
+  --color-brand-primary:#8E4A5A;
+  --color-brand-secondary:#6E3644;
+  --color-brand-accent:#C9A27E;
+  --color-brand-bg:#FAF6F2;
+  --color-brand-surface:#F1E6DF;
+  --color-brand-text:#2E2626;
+  --color-brand-muted:#6B5F5C;
+  --line:#E3D6CF;
+  --font-heading:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Jost',system-ui,sans-serif;
+  --color-white:#FFFFFF;
+  --color-line-strong:#D8C5BA;
+  --text-h1:clamp(40px,4.8vw,64px);
+  --text-h2:clamp(32px,3.6vw,44px);
+  --text-h3:28px;
+  --text-body:18px;
+  --space-1:8px;
+  --space-2:16px;
+  --space-3:24px;
+  --space-4:32px;
+  --space-5:40px;
+  --space-6:48px;
+  --space-8:64px;
+  --space-12:96px;
+  --section-space:104px;
+  --container-max:1200px;
+  --page-gutter:40px;
+  --radius-field:12px;
+  --radius-panel:16px;
+  --radius-card:20px;
+  --radius-pill:999px;
+  --radius-photo-hero:48% 48% 24px 24px;
+  --radius-photo-detail:24px 44% 24px 44%;
+  --radius-photo-about:24px 120px 24px 24px;
+  --radius-photo-newsletter:16px 90px 16px 90px;
+  --motion-duration:0.2s;
+  --motion-ease:ease-out;
+  --focus-outline:3px solid var(--color-brand-primary);
+  --focus-offset:5px;
+}
+@media(max-width:1000px){:root{--page-gutter:24px}}
+@media(max-width:760px){:root{--page-gutter:20px;--text-body:16px;--section-space:64px;--radius-photo-hero:48% 48% 20px 20px}}

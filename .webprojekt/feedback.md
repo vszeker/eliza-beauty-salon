@@ -19,3 +19,6 @@ A HTML-fájlokban az `images/` mappára hivatkozó `src` értékek cserélhetők
 - `spa-interior.jpg`: hangulati részletek a bemutatkozásnál, képpárban vagy feliratkozásnál.
 - `skincare.jpg`: bőrápolási termékhangulat.
 Az eredeti fájlnevek felülírásával végzett képcsere a harmadik irányt is érintené; a harmadik érintetlensége érdekében a saját fotók új fájlnevet kapjanak, és csak az első/második HTML-ben módosuljon a hivatkozás.
+
+## Többoldalas webhely
+Az index.html már a kiválasztott főoldal, nem koncepcióválasztó. A koncepciófájlok archivált minták; a további módosításokat az aktuális index.html/aloldalak és assets/site.css/site.js fájlokon kell elvégezni, és a public csomagba átvezetni.

@@ -1,6 +1,19 @@
 {
   "entry": "public/index.html",
-  "assets": [
+  "pages": [
+    "index.html",
+    "kezelesek.html",
+    "rolunk.html",
+    "kapcsolat.html",
+    "adatkezeles.html"
+  ],
+  "files": [
+    "adatkezeles.html",
+    "assets/site.css",
+    "assets/site.js",
+    "images/website/care-collection-480w.webp",
+    "images/website/care-collection-800w.webp",
+    "images/website/care-collection.webp",
     "images/website/cream-texture-480w.webp",
     "images/website/cream-texture-800w.webp",
     "images/website/cream-texture.webp",
@@ -25,12 +38,19 @@
     "images/website/skincare-textures.webp",
     "images/website/smiling-skin-480w.webp",
     "images/website/smiling-skin.webp",
+    "images/website/social-preview.jpg",
     "images/website/targeted-treatment-480w.webp",
     "images/website/targeted-treatment-800w.webp",
     "images/website/targeted-treatment.webp",
+    "index.html",
+    "kapcsolat.html",
+    "kezelesek.html",
     "logo/favicon.svg",
     "logo/logo-feher.svg",
-    "logo/logo.svg"
+    "logo/logo.svg",
+    "robots.txt",
+    "rolunk.html",
+    "sitemap.xml"
   ],
-  "note": "Prototípus bemutató űrlapokkal; az éles űrlap, PDF és végleges adatkezelés még hiányzik."
+  "forms": "demo"
 }
