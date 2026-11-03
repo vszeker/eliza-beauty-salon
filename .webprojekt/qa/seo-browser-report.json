@@ -1,0 +1,79 @@
+{
+  "report": [
+    {
+      "width": 1440,
+      "h1": 1,
+      "canonical": "https://elizaweboldal.netlify.app/",
+      "brokenImages": 0,
+      "overflow": false,
+      "jsonld": [
+        "WebPage",
+        "FAQPage"
+      ],
+      "headings": [
+        "H1",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H2",
+        "H2",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H3",
+        "H2",
+        "H2",
+        "H2",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H2"
+      ]
+    },
+    {
+      "width": 375,
+      "h1": 1,
+      "canonical": "https://elizaweboldal.netlify.app/",
+      "brokenImages": 0,
+      "overflow": false,
+      "jsonld": [
+        "WebPage",
+        "FAQPage"
+      ],
+      "headings": [
+        "H1",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H2",
+        "H2",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H3",
+        "H2",
+        "H2",
+        "H2",
+        "H2",
+        "H3",
+        "H3",
+        "H3",
+        "H2"
+      ]
+    }
+  ],
+  "errors": []
+}
