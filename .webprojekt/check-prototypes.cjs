@@ -7,7 +7,8 @@ const {pathToFileURL}=require('url');
  const out=path.join(__dirname,'qa');fs.mkdirSync(out,{recursive:true});
  const browser=await chromium.launch({headless:true,channel:'msedge'});
  const directions=JSON.parse(fs.readFileSync(path.join(__dirname,'iranyok.json'),'utf8').replace(/^\uFEFF/,''));
- const files=['index.html',...directions.directions.map(d=>`koncepcio-${d.id}-${d.slug}.html`)];
+ const requested=process.argv.slice(2);
+ const files=['index.html',...directions.directions.map(d=>`koncepcio-${d.id}-${d.slug}.html`)].filter(f=>!requested.length||requested.includes(f));
  const results=[];
  for(const file of files){
   if(!fs.existsSync(path.join(root,file))) {results.push({file,missing:true});continue;}
