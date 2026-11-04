@@ -39,3 +39,12 @@ for (const [message, reason] of [
 await deliverGuide(data,{...options,env:{BREVO_API_KEY:'  test-only-not-a-real-key\n'}});
 assert.equal(calls.at(-1).init.headers['api-key'],'test-only-not-a-real-key');
 console.log('Kisokos: validation, consent, contact isolation, safe email, retries and provider failures passed. No real email sent.');
+
+for (const [message, reason] of [
+ ['Your SMTP account is not yet activated. Please contact support','transactional-account-not-activated'],
+ ['Sender email is not valid','sender-invalid-or-not-verified'],
+ ['Not enough credits','sending-quota-unavailable'],
+ ['Invalid idempotency key','request-idempotency-rejected']
+]) {
+ await assert.rejects(deliverGuide(data,{...options,fetchEmail:async()=>({ok:false,status:400,json:async()=>({code:'permission_denied',message})})}), error=>error.message.includes('reason='+reason)&&error.message.includes('provider-code=permission_denied'));
+}
