@@ -18,8 +18,13 @@ export async function deliverGuide(data, { env = process.env, fetchEmail = fetch
   const escape = value => value.replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   // Retries of the same browser request keep the same provider idempotency key.
   const requestId = String(data['request-id'] || '');
-  if (!/^[a-f0-9-]{36}$/i.test(requestId)) throw new Error('Missing request identifier');
-  const key = createHash('sha256').update(requestId + ':' + email).digest('hex');
+  if (!/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(requestId)) throw new Error('Missing request identifier');
+  // Brevo requires a UUID, not the full 64-character SHA-256 hex string.
+  const bytes = createHash('sha256').update(requestId + ':' + email).digest().subarray(0, 16);
+  bytes[6] = (bytes[6] & 0x0f) | 0x40;
+  bytes[8] = (bytes[8] & 0x3f) | 0x80;
+  const hex = bytes.toString('hex');
+  const key = `${hex.slice(0,8)}-${hex.slice(8,12)}-${hex.slice(12,16)}-${hex.slice(16,20)}-${hex.slice(20)}`;
   const response = await fetchEmail('https://api.brevo.com/v3/smtp/email', {
     method: 'POST',
     headers: {'api-key': apiKey, 'Content-Type': 'application/json', accept: 'application/json'},
