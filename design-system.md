@@ -113,3 +113,5 @@ A design system elkészítése nem módosítja a főoldalt. Minden későbbi old
 
 ## Többoldalas megvalósítás
 Az új belépési pont az index.html, a további oldalak: kezelesek.html, rolunk.html, kapcsolat.html, adatkezeles.html. A közös megjelenés az assets/site.css, az interakciók az assets/site.js fájlba kerültek; a public mappa ezeket és az oldalakat tartalmazza. A korábbi koncepciófájlok archív minták.
+
+Aloldali szakaszkezdés: nincs Főoldal / … morzsamenü. A rövid kategóriafelirat marad, a hero felső térköze 48px, mobilon 24px. A Mesotica kártya és részletképe a 27-es meleg tónusú kezelési fotó.

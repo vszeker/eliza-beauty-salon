@@ -329,5 +329,26 @@
         "height": 800
       }
     ]
+  },
+  "mesotica-warm": {
+    "source": "27.png",
+    "alt": "Kozmetikai arcmasszázs meleg bézs környezetben",
+    "variants": [
+      {
+        "path": "images/optimized/27.webp",
+        "width": 1600,
+        "height": 1131
+      },
+      {
+        "path": "images/optimized/27-800w.webp",
+        "width": 800,
+        "height": 566
+      },
+      {
+        "path": "images/optimized/27-480w.webp",
+        "width": 480,
+        "height": 339
+      }
+    ]
   }
 }
