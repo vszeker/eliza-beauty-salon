@@ -1,0 +1,35 @@
+{
+  "report": [
+    {
+      "file": "index.html",
+      "formName": "idopontkeres-index",
+      "success": true,
+      "errorPreservesData": true,
+      "duplicateGuard": true
+    },
+    {
+      "file": "kezelesek.html",
+      "formName": "idopontkeres-kezelesek",
+      "success": true,
+      "errorPreservesData": true,
+      "duplicateGuard": true
+    },
+    {
+      "file": "rolunk.html",
+      "formName": "idopontkeres-rolunk",
+      "success": true,
+      "errorPreservesData": true,
+      "duplicateGuard": true
+    },
+    {
+      "file": "kapcsolat.html",
+      "formName": "idopontkeres-kapcsolat",
+      "success": true,
+      "errorPreservesData": true,
+      "duplicateGuard": true
+    }
+  ],
+  "noJSFallback": true,
+  "networkErrorHandled": true,
+  "realSubmissionsSent": false
+}
