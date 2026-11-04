@@ -53,7 +53,7 @@ def page(filename,title,description,main):
  old='<form data-demo="contact">'
  replacement='<form name="'+form_name+'" method="POST" action="/koszonjuk.html" data-netlify="true" netlify-honeypot="bot-field" data-contact-form><input type="hidden" name="form-name" value="'+form_name+'"><p hidden><label>Hagyd üresen ezt a mezőt: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>'
  main=main.replace(old,replacement)
- main=re.sub(r'<p class="small">Az adatkezelésről.*?</p>', '<input type="hidden" name="privacy-version" value="2026-11-04"><label class="check contact-consent"><input type="checkbox" name="privacy-consent" value="accepted" required><span>Elolvastam az <a href="adatkezeles.html">adatkezelési tájékoztatót</a>, és hozzájárulok nevem, e-mail-címem és üzenetem kezeléséhez a megkeresésem megválaszolása céljából, legfeljebb 30 napig. Ez nem jelent hírlevél-feliratkozást.</span></label>', main, flags=re.S)
+ main=re.sub(r'<p class="small">Az adatkezelésről.*?</p>', '<input type="hidden" name="privacy-version" value="2026-11-04"><label class="check contact-consent"><input type="checkbox" name="privacy-consent" value="accepted" required><span>Elolvastam az <a href="https://elizaweboldal.netlify.app/adatkezeles">adatkezelési tájékoztatót</a>, és hozzájárulok, hogy a megadott adataimat a válaszadásához és az időpont egyeztetéséhez kezeljék.</span></label>', main, flags=re.S)
 
  main=main.replace('Bemutató űrlap, nem küld üzenetet. Éles működéskor Eliza e-mailben vagy telefonon egyezteti vissza az időpontot.','Tanfolyami mintaoldal működő űrlappal. Az üzeneted az oldal készítőjéhez érkezik, nem jelent valódi szalonfoglalást. Kérlek, egészségügyi adatot ne adj meg.')
 
