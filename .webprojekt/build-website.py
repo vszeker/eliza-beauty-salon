@@ -14,7 +14,7 @@ extra='''
 extra+='\n.value-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid #D8C5BA;border-radius:50%;color:var(--color-brand-primary);margin-bottom:20px}.value-icon svg{width:25px;height:25px}\n'
 extra+="\n.portrait-story{grid-template-columns:.85fr 1.15fr;align-items:center;gap:96px}.eliza-portrait{margin:12px 16px 20px 0}.eliza-portrait img{width:100%;height:580px;object-fit:cover;object-position:center 38%;border-radius:48% 48% 24px 24px}.portrait-story .story-lead{font:500 28px/1.4 var(--font-heading);color:var(--color-brand-text)}.story-timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:80px;position:relative}.story-timeline:before{content:'';position:absolute;left:0;right:0;top:24px;border-top:1px solid var(--color-brand-accent)}.story-timeline .milestone{display:block;border:0;padding:0;position:relative}.story-timeline .milestone>strong{display:inline-block;position:relative;padding:0 20px 0 0;background:var(--color-brand-bg);font:500 40px/1.2 var(--font-heading);color:var(--color-brand-primary)}.story-timeline .milestone>div{padding-top:24px}.story-timeline h3{font-size:26px}.story-timeline p{font-size:16px;margin-top:12px}\n@media(max-width:1000px){.portrait-story{gap:48px}.eliza-portrait img{height:520px}.story-timeline{gap:24px}}\n@media(max-width:760px){.portrait-story{grid-template-columns:1fr;gap:40px}.eliza-portrait{max-width:440px;margin:8px 16px 16px 8px}.eliza-portrait img{height:460px}.portrait-story .story-lead{font-size:26px}.story-timeline{grid-template-columns:1fr;gap:32px;margin-top:48px;padding-left:24px}.story-timeline:before{top:0;bottom:0;left:0;right:auto;border-top:0;border-left:1px solid var(--color-brand-accent)}.story-timeline .milestone:before{content:'';position:absolute;left:-28px;top:15px;width:9px;height:9px;border-radius:50%;background:var(--color-brand-primary)}.story-timeline .milestone>strong{font-size:32px}.story-timeline .milestone>div{padding-top:12px}}\n"
 extra+='\n.hero-copy,.hero-photo{animation:none}\n'
-extra+='\n.contact form>.contact-consent{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.6}.check input[type=checkbox]{appearance:auto;-webkit-appearance:checkbox;padding:0;border-radius:3px;box-sizing:border-box}.contact-consent input[type=checkbox]{flex:0 0 20px;width:20px;height:20px;margin:3px 0 0;cursor:pointer;accent-color:var(--color-brand-primary)}.contact form button:disabled{opacity:.55;cursor:not-allowed}.contact-consent span{flex:1;min-width:0}.contact-consent a{text-decoration:underline;text-underline-offset:3px}.legal li{margin:16px 0}.legal ul{padding-left:24px}\n'
+extra+='\n.contact form>.contact-consent{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.6}.check input[type=checkbox]{appearance:auto;-webkit-appearance:checkbox;padding:0;border-radius:3px;box-sizing:border-box}.contact-consent input[type=checkbox]{flex:0 0 20px;width:20px;height:20px;margin:3px 0 0;cursor:pointer;accent-color:var(--color-brand-primary)}.newsletter button:disabled,.contact form button:disabled{opacity:.55;cursor:not-allowed}.contact-consent span{flex:1;min-width:0}.contact-consent a{text-decoration:underline;text-underline-offset:3px}.legal li{margin:16px 0}.legal ul{padding-left:24px}\n'
 font_css=(root/'.webprojekt/local-fonts.css').read_text(encoding='utf-8')
 combined_css=font_css+'\n'+base_css+'\n'+extra
 combined_css=re.sub(r'/\*.*?\*/','',combined_css,flags=re.S)
@@ -24,6 +24,7 @@ css_name='assets/site.'+hashlib.sha256(combined_css.encode()).hexdigest()[:10]+'
 (root/css_name).write_text(combined_css,encoding='utf-8')
 js='''const menuButton=document.querySelector('.menu-btn'),menu=document.querySelector('#menu');function closeMenu(){menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='Menü'}menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menu.classList.toggle('open',open);menuButton.textContent=open?'Bezárás':'Menü'});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.contains('open')){closeMenu();menuButton.focus()}});window.matchMedia('(min-width:761px)').addEventListener('change',e=>{if(e.matches)closeMenu()});document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();form.querySelector('[role=status]').textContent=form.dataset.demo==='newsletter'?'Ez egy bemutató: nem történt feliratkozás. A Kisokos letöltése még nem elérhető.':'Ez egy bemutató: az üzeneted nem került elküldésre, időpontkérés nem történt.'}));'''
 js+='\n'+(root/'.webprojekt/contact-forms.js').read_text(encoding='utf-8')
+js+='\n'+(root/'.webprojekt/guide-form.js').read_text(encoding='utf-8')
 (assets/'site.js').write_text(js,encoding='utf-8')
 js_name='assets/site.'+hashlib.sha256(js.encode()).hexdigest()[:10]+'.js'
 (root/js_name).write_text(js,encoding='utf-8')
@@ -77,6 +78,10 @@ def page(filename,title,description,main):
 # Home retains the chosen composition; navigation now leads to actual pages.
 home=re.search(r'<main id="tartalom">(.*?)</main>',source,re.S)[1]
 home=home.replace('href="#kezelesek"','href="kezelesek.html"')
+home=home.replace('Iratkozz fel, és töltsd le az Arcápolási Kisokost! Hasznos tippek és szakértői tanácsok a mindennapi ápoláshoz.', 'Kérd el az ingyenes Arcápolási Kisokost! A letöltési linket egyszeri e-mailben küldjük el, hírlevél-feliratkozás nélkül.')
+guide_form='''<form name="arcapolasi-kisokos" method="POST" action="/kisokos-koszonjuk.html" data-netlify="true" netlify-honeypot="bot-field" data-guide-form><input type="hidden" name="form-name" value="arcapolasi-kisokos"><input type="hidden" name="request-kind" value="arcapolasi-kisokos-v1"><input type="hidden" name="request-id"><input type="hidden" name="privacy-version" value="2026-11-04"><p hidden><label>Hagyd üresen: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p><p class="small">Add meg a neved és az e-mail-címed, és elküldjük a Kisokos letöltési linkjét. Nem iratkozol fel hírlevélre.</p><label for="news-name">Név<input id="news-name" name="name" autocomplete="name" maxlength="100" required></label><label for="news-email">E-mail-cím<input id="news-email" name="email" type="email" autocomplete="email" maxlength="254" required></label><label class="check"><input type="checkbox" name="guide-consent" value="accepted" required><span>Elolvastam és elfogadom az <a href="adatkezeles.html">adatkezelési tájékoztatót</a>, és hozzájárulok, hogy nevemet és e-mail-címemet a Kisokos egyszeri kiküldéséhez kezeljék.</span></label><button class="btn" type="submit" disabled>Kérem az ingyenes kisokost</button><noscript><p>A Kisokos e-mailes kéréséhez engedélyezd a JavaScriptet, vagy írj a szeviki1020@gmail.com címre.</p></noscript><div class="form-status" role="status" aria-live="polite"></div></form>'''
+home=re.sub(r'<form data-demo="newsletter">.*?</form>',lambda m:guide_form,home,flags=re.S)
+
 home=re.sub(r'<a href="#adatkezeles" data-privacy','<a href="adatkezeles.html"',home)
 home=home.replace('href="#rolunk"','href="rolunk.html"')
 card_index=0
@@ -119,7 +124,10 @@ thank_you=root/'koszonjuk.html'
 thank_you.write_text(thank_you.read_text(encoding='utf-8').replace('</head>','<meta name="robots" content="noindex"></head>'),encoding='utf-8')
 
 # Curate the deploy folder, preserving shared original assets and prototypes.
-filenames=['index.html','kezelesek.html','rolunk.html','kapcsolat.html','adatkezeles.html','koszonjuk.html']
+page('kisokos-koszonjuk.html','Kisokos-kérés fogadva | Eliza Beauty Salon','Az Arcápolási Kisokos kérésének visszaigazolása.','<section class="section wrap"><h1>A kérésedet fogadtuk.</h1><p>A Kisokos linkjét külön e-mailben küldjük. Ha nem érkezik meg, írj a szeviki1020@gmail.com címre.</p><a href="index.html">Vissza a főoldalra</a></section>')
+p=root/'kisokos-koszonjuk.html'
+p.write_text(p.read_text(encoding='utf-8').replace('</head>','<meta name="robots" content="noindex"></head>'),encoding='utf-8')
+filenames=['kisokos-koszonjuk.html','index.html','kezelesek.html','rolunk.html','kapcsolat.html','adatkezeles.html','koszonjuk.html']
 needed=set(filenames)
 for filename in filenames:
  html=(root/filename).read_text(encoding='utf-8')
@@ -129,20 +137,27 @@ for filename in filenames:
   if re.match(r'^(?:https?:|mailto:|tel:|data:)',ref):continue
   ref=ref.split('#')[0]
   if ref:needed.add(ref)
+# Keep the verified Kisokos PDF available for the future one-off email link.
+pdf_source=root/'output/pdf/Eliza-arcápolási-kisokos.pdf'
+if pdf_source.is_file():
+ download=root/'letoltesek/arcapolasi-kisokos.pdf'
+ download.parent.mkdir(exist_ok=True)
+ shutil.copy2(pdf_source,download)
+ needed.add('letoltesek/arcapolasi-kisokos.pdf')
 needed.add('images/website/social-preview.jpg')
 needed.update(f.relative_to(root).as_posix() for f in (assets/'fonts').iterdir() if f.is_file())
 public=root/'public'
 for rel in needed:
  src=root/rel;assert src.is_file(),rel
  dst=public/rel;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst)
-urls=''.join('<url><loc>'+domain+('' if name=='index.html' else name)+'</loc></url>\n' for name in filenames if name!='koszonjuk.html')
+urls=''.join('<url><loc>'+domain+('' if name=='index.html' else name)+'</loc></url>\n' for name in filenames if name not in ['koszonjuk.html','kisokos-koszonjuk.html'])
 (public/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls+'</urlset>\n',encoding='utf-8')
 (public/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+domain+'sitemap.xml\n',encoding='utf-8')
 (public/'_headers').write_text('/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/images/*\n  Cache-Control: public, max-age=3600, stale-while-revalidate=86400\n',encoding='utf-8')
 allowed=needed|{'sitemap.xml','robots.txt','_headers'}
 for old in public.rglob('*'):
  if old.is_file() and old.relative_to(public).as_posix() not in allowed:old.unlink()
-(root/'.webprojekt/deploy-manifest.json').write_text(json.dumps({'entry':'public/index.html','pages':filenames,'files':sorted(allowed),'forms':'Netlify Forms contact; newsletter remains demo'},ensure_ascii=False,indent=2),encoding='utf-8')
+(root/'.webprojekt/deploy-manifest.json').write_text(json.dumps({'entry':'public/index.html','pages':filenames,'files':sorted(allowed),'forms':'Netlify Forms contact and one-off Kisokos request; Brevo event function'},ensure_ascii=False,indent=2),encoding='utf-8')
 # Pin the publish directory to prevent serving the former navigator or workfiles.
-(root/'netlify.toml').write_text('[build]\n  publish = "public"\n',encoding='utf-8')
+(root/'netlify.toml').write_text('[build]\n  publish = "public"\n\n[functions]\n  directory = "netlify/functions"\n',encoding='utf-8')
 print('Öt összekapcsolt oldal, közös CSS/JS és frissített public csomag elkészült.')

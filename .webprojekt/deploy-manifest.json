@@ -1,6 +1,7 @@
 {
   "entry": "public/index.html",
   "pages": [
+    "kisokos-koszonjuk.html",
     "index.html",
     "kezelesek.html",
     "rolunk.html",
@@ -17,8 +18,8 @@
     "assets/fonts/cormorant-garamond-latin-v1.woff2",
     "assets/fonts/jost-latin-ext-v1.woff2",
     "assets/fonts/jost-latin-v1.woff2",
-    "assets/site.83b0c39c83.css",
-    "assets/site.d257d0e2d9.js",
+    "assets/site.0294988b9a.js",
+    "assets/site.1897aae577.css",
     "images/optimized/25-480w.webp",
     "images/optimized/25-800w.webp",
     "images/optimized/25.webp",
@@ -58,7 +59,9 @@
     "index.html",
     "kapcsolat.html",
     "kezelesek.html",
+    "kisokos-koszonjuk.html",
     "koszonjuk.html",
+    "letoltesek/arcapolasi-kisokos.pdf",
     "logo/favicon.svg",
     "logo/logo-feher.svg",
     "logo/logo.svg",
@@ -66,5 +69,5 @@
     "rolunk.html",
     "sitemap.xml"
   ],
-  "forms": "Netlify Forms contact; newsletter remains demo"
+  "forms": "Netlify Forms contact and one-off Kisokos request; Brevo event function"
 }
