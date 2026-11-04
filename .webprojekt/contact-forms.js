@@ -1,6 +1,12 @@
 // Native POST remains available without JavaScript; JS adds inline feedback.
 document.querySelectorAll('form[data-contact-form]').forEach(form => {
   let sending = false;
+  const consent = form.querySelector('[name="privacy-consent"]');
+  const submitButton = form.querySelector('button[type="submit"]');
+  const updateAvailability = () => { submitButton.disabled = sending || !consent?.checked; };
+  consent?.addEventListener('change', updateAvailability);
+  form.addEventListener('reset', () => queueMicrotask(updateAvailability));
+  updateAvailability();
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (sending || !form.reportValidity()) return;
@@ -29,7 +35,7 @@ document.querySelectorAll('form[data-contact-form]').forEach(form => {
       status.dataset.state = 'error';
     } finally {
       sending = false;
-      button.disabled = false;
+      updateAvailability();
       button.textContent = originalLabel;
       form.removeAttribute('aria-busy');
     }
