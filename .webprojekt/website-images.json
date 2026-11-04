@@ -371,5 +371,27 @@
         "height": 339
       }
     ]
+  },
+  "eliza-portrait": {
+    "source": "11.png",
+    "crop": [
+      163,
+      108,
+      917,
+      1242
+    ],
+    "alt": "Eliza bemutatkozó portréja",
+    "variants": [
+      {
+        "path": "images/website/eliza-portrait.webp",
+        "width": 754,
+        "height": 1134
+      },
+      {
+        "path": "images/website/eliza-portrait-480w.webp",
+        "width": 480,
+        "height": 722
+      }
+    ]
   }
 }
