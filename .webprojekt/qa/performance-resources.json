@@ -1,0 +1,70 @@
+{
+  "fonts": [
+    {
+      "family": "Cormorant Garamond",
+      "weight": "500 600"
+    },
+    {
+      "family": "Cormorant Garamond",
+      "weight": "500 600"
+    },
+    {
+      "family": "Jost",
+      "weight": "400 500"
+    },
+    {
+      "family": "Jost",
+      "weight": "400 500"
+    }
+  ],
+  "hungarianGlyphFontsAvailable": true,
+  "heroAnimation": "none",
+  "heroPreload": true,
+  "resources": [
+    {
+      "url": "http://127.0.0.1:56603/assets/fonts/cormorant-garamond-latin-v1.woff2",
+      "bytes": 37640
+    },
+    {
+      "url": "http://127.0.0.1:56603/assets/site.b6e7b42c03.css",
+      "bytes": 31482
+    },
+    {
+      "url": "http://127.0.0.1:56603/assets/fonts/jost-latin-v1.woff2",
+      "bytes": 26576
+    },
+    {
+      "url": "http://127.0.0.1:56603/images/website/smiling-skin-480w.webp",
+      "bytes": 17264
+    },
+    {
+      "url": "http://127.0.0.1:56603/logo/logo.svg",
+      "bytes": 7817
+    },
+    {
+      "url": "http://127.0.0.1:56603/assets/site.1469c06a33.js",
+      "bytes": 2795
+    },
+    {
+      "url": "http://127.0.0.1:56603/assets/fonts/jost-latin-ext-v1.woff2",
+      "bytes": 17104
+    },
+    {
+      "url": "http://127.0.0.1:56603/assets/fonts/cormorant-garamond-latin-ext-v1.woff2",
+      "bytes": 33736
+    },
+    {
+      "url": "http://127.0.0.1:56603/images/website/relaxing-facial-480w.webp",
+      "bytes": 10352
+    },
+    {
+      "url": "http://127.0.0.1:56603/images/optimized/28-480w.webp",
+      "bytes": 14678
+    },
+    {
+      "url": "http://127.0.0.1:56603/logo/favicon.svg",
+      "bytes": 1292
+    }
+  ],
+  "external": []
+}

@@ -9,9 +9,16 @@
     "koszonjuk.html"
   ],
   "files": [
+    "_headers",
     "adatkezeles.html",
-    "assets/site.css",
-    "assets/site.js",
+    "assets/fonts/Cormorant-Garamond-OFL.txt",
+    "assets/fonts/Jost-OFL.txt",
+    "assets/fonts/cormorant-garamond-latin-ext-v1.woff2",
+    "assets/fonts/cormorant-garamond-latin-v1.woff2",
+    "assets/fonts/jost-latin-ext-v1.woff2",
+    "assets/fonts/jost-latin-v1.woff2",
+    "assets/site.1469c06a33.js",
+    "assets/site.b6e7b42c03.css",
     "images/optimized/25-480w.webp",
     "images/optimized/25-800w.webp",
     "images/optimized/25.webp",

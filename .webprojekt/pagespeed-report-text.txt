@@ -1,0 +1,190 @@
+PageSpeed Insights
+Link másolása
+Dokumentumok
+Ez a webhely Google-tól származó cookie-kat használ a szolgáltatásai biztosítására és a forgalom elemzésére.
+További információ.
+Rendben, értem.
+Jelentés létrehozásának ideje: 2026. nov. 4. 12:08:55
+
+Érvényes URL-t adjon meg
+
+Elemzés
+smartphone
+Mobil
+computer
+Asztal
+A valódi felhasználók által tapasztalt élmény felfedezése
+Ez az URL
+Eredet
+Alapvető webes vitals-mutatók értékelése
+Sikertelen
+Nézet kibontása
+Largest Contentful Paint (LCP)
+4,2 mp
+Interaction to Next Paint (INP)
+330 ms
+Cumulative Layout Shift (CLS)
+0
+TOVÁBBI FONTOS MUTATÓK
+First Contentful Paint (FCP)
+2,8 mp
+Time to First Byte (TTFB)
+0,4 mp
+Legutóbbi 28 napos időszak
+(
+előzmények
+)
+Különféle mobileszközök
+Több minta (
+Chrome UX-jelentés
+)
+Látogatások teljes időtartama
+Különféle hálózati kapcsolatok
+Minden Chrome-verzió
+Teljesítményt érintő problémák elemzése
+30
+Teljesítmény
+100
+Kisegítő lehetőségek
+96
+Bevált módszerek
+100
+Keresőoptimalizálás
+2/4
+Ügynöki böngészés
+30
++0
++0
++5
++25
++0
+Teljesítmény
+Az értékek becsültek és változhatnak. A teljesítménypontszám kiszámítása közvetlenül e mutatók alapján történik.Számológép megtekintése
+0–49
+50–89
+90–100
+MUTATÓK
+Nézet kibontása
+First Contentful Paint
+13,0 mp
+Largest Contentful Paint
+19,8 mp
+Total Blocking Time
+1330 ms
+Cumulative Layout Shift
+0
+Speed Index
+13,0 mp
+Captured at 2026. nov. 4. 12:08 CET
+Emulált Moto G Power with Lighthouse 13.6.0
+Egyoldalas munkamenet
+Első oldalbetöltés
+Lassú 4G emulálása
+Using HeadlessChromium 153.0.8010.36 with lr
+Fastruktúra megtekintése
+A következővel kapcsolatos naplóbejegyzések megjelenítése:
+All
+FCP
+LCP
+TBT
+CLS
+STATISZTIKA
+Renderelést letiltó kérelmek Becsült megtakarítás: 13 880 ms
+Régi JavaScript Becsült megtakarítás: 31 KiB
+Hálózati függőségi fa
+Hatékony gyorsítótár-élettartam használata Becsült megtakarítás: 878 KiB
+Betűtípus megjelenítése Becsült megtakarítás: 10 ms
+Ismétlődő JavaScript Becsült megtakarítás: 1 KiB
+LCP-lebontás
+Harmadik felek
+Ezek a statisztikák a Chrome DevTools Teljesítmény paneljén is rendelkezésre állnak – nyom rögzítésével részletesebb információkat tekinthet meg.
+DIAGNOSZTIKA
+Minimalizálja a fő szál terhelését 5,3 mp
+Csökkentse a JavaScript végrehajtási idejét 3,2 mp
+Nem használt JavaScript-kódok számának csökkentése Becsült megtakarítás: 2783 KiB
+Nem használt CSS-kódok számának csökkentése Becsült megtakarítás: 88 KiB
+Minimalizálja a JavaScript-kódot Becsült megtakarítás: 29 KiB
+Kerülje a nagyon nagy hálózati hasznosadat-forgalmat A teljes méret 5506 KiB volt
+Kerülje a fő szálban a hosszú feladatokat 20 hosszú feladat található
+Felhasználói időzítőjelek és intézkedések 7 felhasználói időmérés
+Kerülje a nem kompozit animációk használatát 1 animált elem található
+További információ alkalmazása teljesítményéről. Ezek a számok nem befolyásolják közvetlenül a teljesítménypontszámot.
+SIKERESEN TELJESÍTETT ELLENŐRZÉSEK (10)
+Megjelenítés
+100
+Kisegítő lehetőségek
+Ezek az ellenőrzések kiemelik azokat a lehetőségeket, amelyekkel javíthatók az internetes alkalmazásának a kisegítő lehetőségei. Az automatikus észlelés csak a problémák egy részhalmazát képes észlelni, és nem garantálja az internetes alkalmazás kisegítő lehetőségeinek működését, ezért a manuális tesztelés is javasolt.
+TOVÁBBI MANUÁLISAN ELEMZENDŐ ELEMEK (10)
+Elrejtés
+Interactive controls are keyboard focusable
+Interactive elements indicate their purpose and state
+The page has a logical tab order
+Visual order on the page follows DOM order
+User focus is not accidentally trapped in a region
+The user's focus is directed to new content added to the page
+HTML5 landmark elements are used to improve navigation
+Offscreen content is hidden from assistive technology
+Custom controls have associated labels
+Custom controls have ARIA roles
+Az alábbiak automatikus tesztelőeszközzel nem ellenőrizhető területekre vonatkoznak. További információt a kisegítő lehetőségek felülvizsgálatáról szóló útmutatónkban talál.
+SIKERESEN TELJESÍTETT ELLENŐRZÉSEK (22)
+Megjelenítés
+NEM ALKALMAZHATÓ (41)
+Megjelenítés
+96
+Bevált módszerek
+ÁLTALÁNOS
+A böngészőhibák a konzolon láthatók
+Észlelt JavaScript-függvénytárak
+Hiányzó forrás-hozzárendelések a nagy belső JavaScriptnél
+BIZALOM ÉS BIZTONSÁG
+Gondoskodjon arról, hogy a CSP hatékony az XSS-támadásokkal szemben
+Megfelelő eredetelkülönítés biztosítása a COOP segítségével
+A DOM-alapú XSS csökkentése Trusted Types-utasítással
+BÖNGÉSZŐKOMPATIBILITÁS
+Baseline-funkciók
+SIKERESEN TELJESÍTETT ELLENŐRZÉSEK (11)
+Megjelenítés
+NEM ALKALMAZHATÓ (3)
+Megjelenítés
+100
+Keresőoptimalizálás
+Ezekkel az ellenőrzésekkel győződhet meg arról, hogy oldala követi a keresőoptimalizálásra vonatkozó alapvető tanácsokat. Számos olyan, a Lighthouse által itt nem értékelt tényező van még, amely hatással lehet a keresésbeli rangsorolásra, beleértve az Alapvető webes vitals-mutatók teljesítményét is. További információ a Google Kereső Essentials szolgáltatásról.
+TOVÁBBI MANUÁLISAN ELEMZENDŐ ELEMEK (1)
+Elrejtés
+A strukturált adatok érvényesek
+Ha ezeket a további érvényesítőket is futtatja webhelyén, egyéb bevált SEO-módszereket is ellenőrizhet.
+SIKERESEN TELJESÍTETT ELLENŐRZÉSEK (9)
+Megjelenítés
+NEM ALKALMAZHATÓ (1)
+Megjelenítés
+2/4
+Ügynöki böngészés
+Ezek az ellenőrzések biztosítják az AI-ügynökök számára a jó minőségű, böngészhető webhelyeket, és ellenőrzik a WebMCP-integrációk helyességét. Ez a kategória még fejlesztés alatt áll, és módosulhat.
+ÜGYNÖK FELFEDEZHETŐSÉGE
+Az llms.txt nem követi a javaslatokat
+A(z) ai-catalog.json séma érvénytelen
+Ezek az ellenőrzések azt igazolják, hogy a webhelyek felfedezhető forrásokat, dokumentációt és katalógusokat tesznek közzé az AI-ügynökök számára.
+SIKERESEN TELJESÍTETT ELLENŐRZÉSEK (2)
+Megjelenítés
+NEM ALKALMAZHATÓ (3)
+Megjelenítés
+További információ a PageSpeed Insights eszközről
+Újdonságok
+Dokumentáció
+További információ az internetes teljesítményről
+Tegyen fel kérdéseket a veremtúlcsordulással kapcsolatban
+Levelezőlista
+Kapcsolódó tartalom
+Frissítések
+Webes alapismeretek
+Esettanulmányok
+Podcastok
+Csatlakozás
+Twitter
+YouTube
+Chrome
+Firebase
+Minden termék
+Feltételek és adatvédelmi irányelvek
+További információt a Google Developers webhelyirányelveiben talál.
