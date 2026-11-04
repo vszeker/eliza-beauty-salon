@@ -11,7 +11,8 @@ export async function deliverGuide(data, { env = process.env, fetchEmail = fetch
       !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(email)) {
     throw new Error('Invalid guide request');
   }
-  if (!env.BREVO_API_KEY) throw new Error('BREVO_API_KEY is not configured');
+  const apiKey = String(env.BREVO_API_KEY || '').trim();
+  if (!apiKey) throw new Error('BREVO_API_KEY is not configured');
   const sender = 'szeviki1020@gmail.com';
   const link = 'https://elizaweboldal.netlify.app/letoltesek/arcapolasi-kisokos.pdf';
   const escape = value => value.replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -21,7 +22,7 @@ export async function deliverGuide(data, { env = process.env, fetchEmail = fetch
   const key = createHash('sha256').update(requestId + ':' + email).digest('hex');
   const response = await fetchEmail('https://api.brevo.com/v3/smtp/email', {
     method: 'POST',
-    headers: {'api-key': env.BREVO_API_KEY, 'Content-Type': 'application/json', accept: 'application/json'},
+    headers: {'api-key': apiKey, 'Content-Type': 'application/json', accept: 'application/json'},
     signal: AbortSignal.timeout(15000),
     body: JSON.stringify({
       sender: {name: 'Eliza Beauty Salon', email: sender},
@@ -34,8 +35,20 @@ export async function deliverGuide(data, { env = process.env, fetchEmail = fetch
     })
   });
   if (!response.ok) {
-    // Never log the key, recipient, form body or provider response containing PII.
-    throw new Error(`Guide email provider returned HTTP ${response.status}`);
+    // Classify the response without ever logging its raw text (keys, IPs or PII).
+    let reason = 'provider-rejected-request';
+    try {
+      const error = await response.json();
+      const message = typeof error.message === 'string' ? error.message.toLowerCase() : '';
+      if (response.status === 401) {
+        if (message.includes('key not found') || message.includes('invalid api key')) reason = 'api-key-invalid-or-revoked';
+        else if (message.includes('ip') && /authoriz|block|allow|recogni/.test(message)) reason = 'outbound-ip-not-authorized';
+        else if (message.includes('not verified')) reason = 'brevo-not-verified-check-ip-security-or-account';
+        else reason = 'authentication-rejected';
+      } else if (response.status === 403) reason = 'permission-or-account-rejected';
+      else if (response.status === 429) reason = 'provider-rate-limit';
+    } catch { /* A non-JSON response must not expose raw provider output. */ }
+    throw new Error(`Guide email provider returned HTTP ${response.status}; reason=${reason}; diagnostics=v2`);
   }
 }
 

@@ -22,4 +22,20 @@ assert.ok(calls[0].body.htmlContent.includes('Teszt &lt;Anna&gt;'));
 assert.equal(calls[0].body.listIds,undefined,'no marketing list subscription');
 await assert.rejects(deliverGuide(data,{...options,fetchEmail:async()=>({ok:false,status:429})}),/HTTP 429/);
 await assert.rejects(deliverGuide(data,{...options,fetchEmail:async()=>{throw new Error('network')}}),/network/);
+for (const [message, reason] of [
+  ['Key not found','api-key-invalid-or-revoked'],
+  ['not verified','brevo-not-verified-check-ip-security-or-account'],
+  ['IP not authorized 192.0.2.1','outbound-ip-not-authorized'],
+  ['unexpected private detail teszt@example.com test-only-not-a-real-key','authentication-rejected']
+]) {
+  await assert.rejects(deliverGuide(data,{...options,fetchEmail:async()=>({ok:false,status:401,json:async()=>({message})})}), error => {
+    assert.ok(error.message.includes('reason='+reason));
+    assert.ok(!error.message.includes('teszt@example.com'));
+    assert.ok(!error.message.includes('192.0.2.1'));
+    assert.ok(!error.message.includes('test-only-not-a-real-key'));
+    return true;
+  });
+}
+await deliverGuide(data,{...options,env:{BREVO_API_KEY:'  test-only-not-a-real-key\n'}});
+assert.equal(calls.at(-1).init.headers['api-key'],'test-only-not-a-real-key');
 console.log('Kisokos: validation, consent, contact isolation, safe email, retries and provider failures passed. No real email sent.');
