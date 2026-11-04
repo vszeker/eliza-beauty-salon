@@ -331,21 +331,42 @@
     ]
   },
   "mesotica-warm": {
-    "source": "27.png",
-    "alt": "Kozmetikai arcmasszázs meleg bézs környezetben",
+    "source": "28.png",
+    "alt": "Kozmetikai gépi arckezelés, közeli részlet",
     "variants": [
       {
-        "path": "images/optimized/27.webp",
+        "path": "images/optimized/28.webp",
         "width": 1600,
         "height": 1131
       },
       {
-        "path": "images/optimized/27-800w.webp",
+        "path": "images/optimized/28-800w.webp",
         "width": 800,
         "height": 566
       },
       {
-        "path": "images/optimized/27-480w.webp",
+        "path": "images/optimized/28-480w.webp",
+        "width": 480,
+        "height": 339
+      }
+    ]
+  },
+  "contact-room": {
+    "source": "25.png",
+    "alt": "Világos kozmetikai környezet ápolási kellékekkel, hangulatfotó",
+    "variants": [
+      {
+        "path": "images/optimized/25.webp",
+        "width": 1600,
+        "height": 1131
+      },
+      {
+        "path": "images/optimized/25-800w.webp",
+        "width": 800,
+        "height": 566
+      },
+      {
+        "path": "images/optimized/25-480w.webp",
         "width": 480,
         "height": 339
       }
